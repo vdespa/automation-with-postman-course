@@ -28,3 +28,20 @@
  * [Open Postman on the web](https://go.postman.co/build)
  * [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
 
+
+ ### Lesson 3 - What is API testing
+
+- API testing involves verifying the functionality, reliability, performance, and security of an API
+- the goal of API testing is to identify issues and defects in the API before it is released
+- this course focuses on functional testing
+
+
+### Lesson 4 - Manually testing the API
+
+- to automate the API tests, we first need to know how to perform them manually
+- the goal of this lecture is to go through all the endpoints of this API
+
+### Lesson 5 - Using to Postman variables to store secrets
+
+-
+- 

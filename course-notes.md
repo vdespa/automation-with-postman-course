@@ -54,6 +54,7 @@
 - Postman auth helpers can configure different types of authentication
 - keep in mind that authentication can be configured on one level (collection, folder) and inherited
 
+
 ### Lesson 6 - Writing scripts in Postman
 
 - automated testing is a way to check if the API works correctly by letting Postman run tests
@@ -61,4 +62,23 @@
 - API tests are written using scripts
 - Postman uses JavaScript for writing tests
 - don't confuse JavaScript with Java, as they are two different programming languages
+- console.log can be used to write a message to the Postman console: `console.log(“Hello from the Tests!”);`
+
+
+### Lesson 7 - Use the Postman console for debugging scripts
+
+- the Postman console can be used to view any information about the request and the response (URL, headers, body)
+- any messages logged using console.log can also be seen there
+- to clear the Postman console of entries you can use the "Clear" button or use the following script: `console.clear()`
+
+
+### Lesson 8 - Writing an API test
+
+- the following script can be added to the "Tests" to check if the response status code is 200 OK.
+
+```
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+```
 

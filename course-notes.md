@@ -82,3 +82,12 @@ pm.test("Status code is 200", function () {
 });
 ```
 
+### Lesson 9 - JavaScript basics
+
+- to write tests in Postman, you need to know some JavaScript basics
+- these are the most important concepts you need to be familiar with:
+    -  variables and their scope
+    -  data types including objects and arrays
+    -  functions
+
+### Lesson 10 - JavaScript basics - Variables

@@ -1,8 +1,8 @@
- # Postman Beginner's Course - API Test Automation
+# Postman Beginner's Course - API Test Automation
 
- ## Unit 1 - Introduction to API testing
+## Unit 1 - Introduction to API testing
 
- ### Lesson 1 - Welcome
+### Lesson 1 - Welcome
 
 - this course is ideal if you already know how to use Postman for creating requests
 - in this course you will learn:
@@ -35,7 +35,7 @@
 - if the error persists, [submit an issue](https://github.com/vdespa/automation-with-postman-course/issues/new) and add as many details as possible, including screenshots of any errors that appear.
 
 
- ### Lesson 3 - What is API testing
+### Lesson 3 - What is API testing
 
 - API testing involves verifying the functionality, reliability, performance, and security of an API
 - the goal of API testing is to identify issues and defects in the API before it is released
@@ -47,7 +47,16 @@
 - to automate the API tests, we first need to know how to perform them manually
 - the goal of this lecture is to go through all the endpoints of this API
 
+
 ### Lesson 5 - Using to Postman variables to store secrets
 
--
-- 
+- regardless if the collection is public or private, it is a best practice to store secrets (like API keys, passwords, tokens) in Postman variables
+- Postman auth helpers can configure different types of authentication
+- keep in mind that authentication can be configured on one level (collection, folder) and inherited
+
+### Lesson 6 - Writing scripts in Postman
+
+- automated testing is a way to check if the API works correctly by letting Postman run tests
+- we write scripts to automate the testing of the API
+- API tests are written using scripts
+

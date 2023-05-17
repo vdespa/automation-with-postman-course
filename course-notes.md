@@ -23,10 +23,16 @@
 - create a new public workspace which will store all collections used during the course
 - to run or make changes to a collection from a workspace that isn't yours, you need to make a copy (create a fork)
 
- #### 📚 - Resources
+#### 📚 - Resources
 
  * [Open Postman on the web](https://go.postman.co/build)
  * [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+
+#### 🆘 - Troubleshooting
+
+- if you can't get a status 200 OK reply from the sever when trying the Status endpoint, check the following:
+    - ensure you are on postman.com
+- if the error persists, [submit an issue](https://github.com/vdespa/automation-with-postman-course/issues/new) and add as many details as possible, including screenshots of any errors that appear.
 
 
  ### Lesson 3 - What is API testing

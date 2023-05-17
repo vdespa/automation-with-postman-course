@@ -59,4 +59,6 @@
 - automated testing is a way to check if the API works correctly by letting Postman run tests
 - we write scripts to automate the testing of the API
 - API tests are written using scripts
+- Postman uses JavaScript for writing tests
+- don't confuse JavaScript with Java, as they are two different programming languages
 

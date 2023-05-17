@@ -91,3 +91,12 @@ pm.test("Status code is 200", function () {
     -  functions
 
 ### Lesson 10 - JavaScript basics - Variables
+
+- variables are like containers that store data
+- you can define a variable named "name" with the value "jamie" and log the value to the console like this:
+
+```
+let name = “Jamie”;
+console.log(name);
+```
+

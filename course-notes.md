@@ -109,3 +109,61 @@ console.log(name);
 
  * [let - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
  * [block statement - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
+
+### Lesson 12 - JavaScript basics - Data types
+
+- JavaScript has various data types to represent information
+- the most likely data types you need to know about are: string, number, boolean, object, and array
+- if you are unsure of a data type you can use the `typeof` operator. Example: `console.log(typeof "John"); `
+- example of an object contaning various data types:
+
+```
+let person = {
+   name: "Jake", // string
+   age: 29, //number
+   isAdult: true, // boolean
+   'e-mail': 'jake@example.com', // string
+   hobbies: ['reading', 'travelling', 'gardening', 'cooking'] // array of strings
+};
+```
+
+#### 📚 Resources
+
+[typeof - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+
+
+### Lesson 13 - JavaScript basics - Functions
+
+- functions are fundamental concepts in programming:
+    - they are blocks of code designed to perform specific tasks
+    - they allow us to organize and reuse code effectively
+- A simple function definition in JavaScript:
+
+```javascript
+function greet() {
+  console.log("Hello from Postman!");
+}
+```
+- a function needs to be invoked to work, using the following example syntax: greet()
+- functions can take inputs in the form of arguments:
+
+```javascript
+function greet(name) {
+  console.log("Hello from Postman, " + name + “!”);
+}
+greet('Valentin');
+```
+
+- using console.log in a function is primarily used for debugging and doesn't mean the function returns a value
+- the `return` statement specifies the value that a function should return after executing. 
+- using `return` is necessary when you want to use the result of a function in another part of your code:
+
+```javascript
+function add(a, b) {
+	let sum = a + b;
+	console.log(sum);
+    return sum;
+}
+
+console.log(“The sum is: “ + add(1,2));
+```

@@ -167,3 +167,24 @@ function add(a, b) {
 
 console.log("The sum is: " + add(1,2));
 ```
+
+
+### Lesson 14 - JavaScript basics - Methods
+
+- you can also define a function inside an object:
+
+```javascript
+let person = {
+   firstName: "Jake",
+   age: 29,
+   isAdult: true,
+   'e-mail': 'jake@example.com',
+   hobbies: ['reading', 'travelling', 'gardening', 'cooking'],
+   greet: function(name) {
+       console.log('Hello from Postman ' + name + '. My name is + ' + this.firstName);
+   }
+};
+person.greet('Jake');
+```
+
+- when a function is defined insite an object, we call it a method

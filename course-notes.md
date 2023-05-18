@@ -76,7 +76,7 @@
 
 - the following script can be added to the "Tests" to check if the response status code is 200 OK.
 
-```
+```javascript
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
@@ -95,7 +95,7 @@ pm.test("Status code is 200", function () {
 - variables are like containers that store data
 - you can define a variable named "name" with the value "jamie" and log the value to the console like this:
 
-```
+```javascript
 let name = “Jamie”;
 console.log(name);
 ```
@@ -117,7 +117,7 @@ console.log(name);
 - if you are unsure of a data type you can use the `typeof` operator. Example: `console.log(typeof "John"); `
 - example of an object contaning various data types:
 
-```
+```javascript
 let person = {
    name: "Jake", // string
    age: 29, //number

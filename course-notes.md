@@ -236,3 +236,14 @@ doSomething(function() {
 #### 📚 Resources
 
 [JSON - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+
+
+
+### Lesson 17 - Accessing data from the response body
+
+- to access any information from a JSON response body, you first need to parse the response:
+
+```javascript
+const response = pm.response.json();
+console.log(response);
+```

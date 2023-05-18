@@ -11,7 +11,7 @@
     - running tests with the help of the CI/CD tool Github Actions
 - Postman offers an official badge for completing this course and doing all assignments
 
- #### 📚 - Resources
+ #### 📚 Resources
 
  * [Check out Valentin's YouTube channel](https://www.youtube.com/@vdespa?sub_confirmation=1)
  * [Check out Postman's YouTube channel](https://www.youtube.com/@postman?sub_confirmation=1)
@@ -23,12 +23,12 @@
 - create a new public workspace which will store all collections used during the course
 - to run or make changes to a collection from a workspace that isn't yours, you need to make a copy (create a fork)
 
-#### 📚 - Resources
+#### 📚 Resources
 
  * [Open Postman on the web](https://go.postman.co/build)
  * [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
 
-#### 🆘 - Troubleshooting
+#### 🆘 Troubleshooting
 
 - if you can't get a status 200 OK reply from the sever when trying the Status endpoint, check the following:
     - ensure you are on postman.com
@@ -100,3 +100,12 @@ let name = “Jamie”;
 console.log(name);
 ```
 
+### Lesson 11 - JavaScript basics - Variable scopes
+
+- variables defined within a block statement are available only to code within that block
+- variables defined outside of a block statement are in the global scope can can be access from anywhere
+
+#### 📚 Resources
+
+ * [let - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+ * [block statement - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)

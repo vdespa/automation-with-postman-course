@@ -266,3 +266,12 @@ console.log(response);
 ```javascript
 pm.collectionVariables.set('firstName', 'Jamie');
 ```
+
+### Lesson 20 - Assignment #1
+
+- fork the Assignment #1 collection and follow the instructions from the documentation
+
+#### 📚 Resources
+
+ * [Postman workspace - FORK Assignment #1 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+ * [Postman community](https://community.postman.com/)

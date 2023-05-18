@@ -225,3 +225,14 @@ doSomething(function() {
 ```
 
 - this syntax is used in Postman for writing tests
+
+
+
+### Lesson 16 - JSON format
+
+- most APIs use the JSON format
+- JSON and JavaScript objects are not the same
+
+#### 📚 Resources
+
+[JSON - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)

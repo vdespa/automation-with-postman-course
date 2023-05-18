@@ -222,5 +222,6 @@ function doSomething(someFunction) {
 doSomething(function() {
     sayHello();
 });
+```
 
 - this syntax is used in Postman for writing tests

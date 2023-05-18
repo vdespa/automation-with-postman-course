@@ -252,3 +252,17 @@ console.log(response);
 
 - using Postman variables is a good way to reduce duplication and to have be able to control multiple requests
 - using Postman variables reduces or elimitates the need to copy/paste data or to manually reconfigure requests
+
+
+### Lesson 19 - Setting Postman variables from scripts
+
+- JavaScript variables are not the same with Postman variables
+- JavaScript variables are scoped only to the script where they are defined and any variable set from there are not persisted
+- Postman variables useful for:
+	- storing settings and persisting data on the long term, such as the baseUrl, API key or other details
+	- passing data between requests
+- it is possible to create or update a Postman collection variable from a script:
+
+```javascript
+pm.collectionVariables.set('firstName', 'Jamie');
+```

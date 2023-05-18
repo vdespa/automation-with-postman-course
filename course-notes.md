@@ -238,7 +238,6 @@ doSomething(function() {
 [JSON - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 
-
 ### Lesson 17 - Accessing data from the response body
 
 - to access any information from a JSON response body, you first need to parse the response:
@@ -247,3 +246,9 @@ doSomething(function() {
 const response = pm.response.json();
 console.log(response);
 ```
+
+
+### Lesson 18 - Passing data from one request to the other
+
+- using Postman variables is a good way to reduce duplication and to have be able to control multiple requests
+- using Postman variables reduces or elimitates the need to copy/paste data or to manually reconfigure requests

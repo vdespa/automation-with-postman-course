@@ -188,3 +188,39 @@ person.greet('Jake');
 ```
 
 - when a function is defined insite an object, we call it a method
+
+
+
+### Lesson 15 - JavaScript basics - Callback functions
+
+- callback functions are an essential concept in JavaScript programming and allow for more efficient and flexible code.
+- functions can be stored in variables:
+
+```javascript
+const sayHello = function() {
+    console.log('Hello');
+}
+```
+- functions without a name are called anonymous functions and can only be called by referencing the variable they're stored in, e.g., sayHello.
+- functions can be passed as arguments to another function:
+
+```javascript
+function doSomething(someFunction) {
+	someFunction(); // function is invoked here
+}
+
+doSomething(sayHello); // function passed as an argument
+```
+
+- functions can be defined directly inside another function:
+
+```javascript
+function doSomething(someFunction) {
+    someFunction();
+}
+
+doSomething(function() {
+    sayHello();
+});
+
+- this syntax is used in Postman for writing tests

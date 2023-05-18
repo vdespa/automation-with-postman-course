@@ -149,7 +149,7 @@ function greet() {
 
 ```javascript
 function greet(name) {
-  console.log("Hello from Postman, " + name + “!”);
+  console.log("Hello from Postman, " + name + "!");
 }
 greet('Valentin');
 ```
@@ -165,5 +165,5 @@ function add(a, b) {
     return sum;
 }
 
-console.log(“The sum is: “ + add(1,2));
+console.log("The sum is: " + add(1,2));
 ```

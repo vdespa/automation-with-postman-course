@@ -330,3 +330,34 @@ pm.test("Response body is JSON", () => {
     pm.response.to.be.json;
 });
 ```
+
+### Lesson 6 - Writing simple assertions against the response body
+
+- it is important to assert different aspects about the response body
+- example checking the product name which is a string:
+
+```javascript
+pm.test("Product is Espresso", () => {
+    const response = pm.response.json();
+    pm.expect(response.name).to.eql('Espresso');
+});
+```
+
+- example checking a boolean value:
+
+```javascript
+pm.test("Product is in stock", () => {
+    const response = pm.response.json();
+    pm.expect(response.isAvailable).to.eql(true);
+    pm.expect(response.isAvailable).to.be.true;
+});
+```
+
+- example where the expected value is a Postman variable:
+
+```javascript
+pm.expect(response.id).to.eql(pm.collectionVariables.get('productId'));
+```
+
+
+

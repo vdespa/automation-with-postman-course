@@ -359,5 +359,75 @@ pm.test("Product is in stock", () => {
 pm.expect(response.id).to.eql(pm.collectionVariables.get('productId'));
 ```
 
+### Lesson 7 - Asserting the data-type of a property
+
+- instead of checking for a specific value, it is possible to check if a property exists
+- example checking if the response as a property called `name`:
+
+```javascript
+expect(response).to.have.property('name');
+```
+
+- example checking if a property of the response is a number
+- 
+```javascript
+expect(response.price).to.be.a('number');
+```
+
+#### 📚 Resources
+
+[Chai Assertion Library](https://www.chaijs.com/api/bdd/)
+
+
+### Lesson 8 - Using Postman random variables in assertions
+
+### Lesson 9 - Regular expressions in tests
+
+- it is possible to use regular expressions in assertions:
+
+```javascript
+pm.expect(response.id).to.match(/^[A-Z0-9]{9}$/);
+```
+
+### Lesson 10 - Assignment #3 - Write API tests against the response body
+
+- fork the Assignment #3 collection and follow the instructions from the documentation
+
+#### 📚 Resources
+
+ * [Postman workspace - FORK Assignment #3 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+
+### Lesson 11 - JSON schema validations
+
+```javascript
+pm.test('Schema is valid', function () {
+    const schema = {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "clientId": {
+                "type": "string"
+            },
+            "created": {
+                "type": "string",
+            },
+            "customerName": {
+                "type": "string"
+            },
+            "products": {
+                "type": "array"
+            }
+        }
+    };
+    pm.response.to.have.jsonSchema(schema);
+});
+```
+
+### Lesson 12 - Using Postman mock servers
+
+- using Postman mock servers is an effective way to test if the tests written will fail
+
 
 

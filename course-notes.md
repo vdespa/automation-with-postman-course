@@ -275,3 +275,29 @@ pm.collectionVariables.set('firstName', 'Jamie');
 
  * [Postman workspace - FORK Assignment #1 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
  * [Postman community](https://community.postman.com/)
+
+
+## Unit 2 - Writing API tests
+
+### Lesson 1 - Unit overview
+
+- we have a Postman collection which we can run request by reqy from the beginning to the end.
+- in this unit we will focus on writing tests for the API
+
+### Lesson 2 - Test structure in Postman
+
+- the basic structure of a test in Postman is the following:
+
+```javascript
+pm.test('Name of the test', function () {
+	// assertions
+});
+```
+
+- assertions can be written with `pm.expect`:
+
+```javascript
+pm.expect(1).to.eql(1); - test passes
+pm.expect(1).to.eql(2); - test fails
+```
+

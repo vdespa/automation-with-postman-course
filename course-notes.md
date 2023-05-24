@@ -301,3 +301,11 @@ pm.expect(1).to.eql(1); - test passes
 pm.expect(1).to.eql(2); - test fails
 ```
 
+
+### Lesson 3 - Assignment #2
+
+- fork the Assignment #2 collection and follow the instructions from the documentation
+
+#### 📚 Resources
+
+ * [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)

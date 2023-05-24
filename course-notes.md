@@ -301,11 +301,32 @@ pm.expect(1).to.eql(1); - test passes
 pm.expect(1).to.eql(2); - test fails
 ```
 
+### Lesson 3 - Making assertions about the status code
 
-### Lesson 3 - Assignment #2
+- alternartive way of writing a status code test using `pm.expect`:
+
+```javascript
+pm.test('Status is 200', function () {
+	pm.expect(pm.response.status).to.eql(200);
+});
+```
+
+### Lesson 4 - Assignment #2
 
 - fork the Assignment #2 collection and follow the instructions from the documentation
 
 #### 📚 Resources
 
  * [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+
+
+### Lesson 5 - Asserting the response body is JSON
+
+- an API may return a response that is not JSON
+- before trying to parse the response, it is best to check if the response body is JSON.
+
+```javascript
+pm.test("Response body is JSON", () => {
+    pm.response.to.be.json;
+});
+```

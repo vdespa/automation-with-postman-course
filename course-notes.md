@@ -477,3 +477,19 @@ pm.test('Schema is valid', function () {
 
 * [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/)
 
+
+### Lesson 15 - Assignment #4 - Write a JSON schema
+
+- fork the Assignment #3 collection and follow the instructions from the documentation
+
+#### 📚 Resources
+
+ * [Postman workspace - FORK Assignment #4 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+
+
+### Lesson 16 - Testing response headers
+
+```javascript
+pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
+
+```

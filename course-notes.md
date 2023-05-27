@@ -493,3 +493,20 @@ pm.test('Schema is valid', function () {
 pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
 
 ```
+
+
+## Unit 3 - Automation first steps
+
+### Lesson 2 - Collection runner
+
+- the Postman collection runner is the first step toward testing if an automated run is possible
+- the Postman collection runner is a useful tool for debugging
+
+### Lesson 3 - Scheduled runs
+
+- runs are executed on the Postman Cloud
+- no need to keep Postman open or your computer on during the run
+- excellent tool for API monitoring after deployment, ensuring it continues to function as expected.
+- variable issues: if a variable isn't being resolved during the run, ensure that the variable has been correctly defined in the selected environment.
+- best suited for APIs that are publicly accessible.
+- limited use for pre-production environments which are typically not publicly accessible.

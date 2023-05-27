@@ -429,5 +429,51 @@ pm.test('Schema is valid', function () {
 
 - using Postman mock servers is an effective way to test if the tests written will fail
 
+### Lesson 13 - Advanced JSON schema validation
 
+```
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^[A-Z0-9]{9}$"
+        },
+        "clientId": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9]{9}$"
+        },
+        "created": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "customerName": {
+            "type": "string"
+        },
+        "products": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "quantity": {
+                        "type": "integer",
+                        "minimum": 1
+                    }
+                },
+                "required": ["id", "quantity"]
+            }
+        }
+    },
+    "required": ["id", "clientId", "created", "customerName", "products"]
+}
+```
+
+### Lesson 14 - Common pitfalls with JSON schema validation 
+
+#### 📚 Resources
+
+* [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/)
 

@@ -6,15 +6,15 @@
 
 - this course is ideal if you already know how to use Postman for creating requests
 - in this course you will learn:
-    - write API tests in Postman
-    - automate test execution with various Postman tools (Collection Runner, Postman CLI)
-    - running tests with the help of the CI/CD tool Github Actions
+- write API tests in Postman
+- automate test execution with various Postman tools (Collection Runner, Postman CLI)
+- running tests with the help of the CI/CD tool Github Actions
 - Postman offers an official badge for completing this course and doing all assignments
 
- #### 📚 Resources
+#### 📚 Resources
 
- * [Check out Valentin's YouTube channel](https://www.youtube.com/@vdespa?sub_confirmation=1)
- * [Check out Postman's YouTube channel](https://www.youtube.com/@postman?sub_confirmation=1)
+* [Say THANK YOU for this course by subscribing on YouTube](https://www.youtube.com/@vdespa?sub_confirmation=1)
+* [Check out Postman's YouTube channel](https://www.youtube.com/@postman?sub_confirmation=1)
 
 
 ### Lesson 2 - Introduction to the project
@@ -25,13 +25,13 @@
 
 #### 📚 Resources
 
- * [Open Postman on the web](https://go.postman.co/build)
- * [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+* [Open Postman on the web](https://go.postman.co/build)
+* [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
 
 #### 🆘 Troubleshooting
 
 - if you can't get a status 200 OK reply from the sever when trying the Status endpoint, check the following:
-    - ensure you are on postman.com
+- ensure you are on postman.com
 - if the error persists, [submit an issue](https://github.com/vdespa/automation-with-postman-course/issues/new) and add as many details as possible, including screenshots of any errors that appear.
 
 
@@ -78,7 +78,7 @@
 
 ```javascript
 pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
+pm.response.to.have.status(200);
 });
 ```
 
@@ -86,9 +86,9 @@ pm.test("Status code is 200", function () {
 
 - to write tests in Postman, you need to know some JavaScript basics
 - these are the most important concepts you need to be familiar with:
-    -  variables and their scope
-    -  data types including objects and arrays
-    -  functions
+-  variables and their scope
+-  data types including objects and arrays
+-  functions
 
 ### Lesson 10 - JavaScript basics - Variables
 
@@ -107,8 +107,8 @@ console.log(name);
 
 #### 📚 Resources
 
- * [let - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
- * [block statement - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
+* [let - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+* [block statement - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
 
 ### Lesson 12 - JavaScript basics - Data types
 
@@ -119,11 +119,11 @@ console.log(name);
 
 ```javascript
 let person = {
-   name: "Jake", // string
-   age: 29, //number
-   isAdult: true, // boolean
-   'e-mail': 'jake@example.com', // string
-   hobbies: ['reading', 'travelling', 'gardening', 'cooking'] // array of strings
+name: "Jake", // string
+age: 29, //number
+isAdult: true, // boolean
+'e-mail': 'jake@example.com', // string
+hobbies: ['reading', 'travelling', 'gardening', 'cooking'] // array of strings
 };
 ```
 
@@ -135,13 +135,13 @@ let person = {
 ### Lesson 13 - JavaScript basics - Functions
 
 - functions are fundamental concepts in programming:
-    - they are blocks of code designed to perform specific tasks
-    - they allow us to organize and reuse code effectively
+- they are blocks of code designed to perform specific tasks
+- they allow us to organize and reuse code effectively
 - A simple function definition in JavaScript:
 
 ```javascript
 function greet() {
-  console.log("Hello from Postman!");
+console.log("Hello from Postman!");
 }
 ```
 - a function needs to be invoked to work, using the following example syntax: greet()
@@ -149,7 +149,7 @@ function greet() {
 
 ```javascript
 function greet(name) {
-  console.log("Hello from Postman, " + name + "!");
+console.log("Hello from Postman, " + name + "!");
 }
 greet('Valentin');
 ```
@@ -160,9 +160,9 @@ greet('Valentin');
 
 ```javascript
 function add(a, b) {
-	let sum = a + b;
-	console.log(sum);
-    return sum;
+let sum = a + b;
+console.log(sum);
+return sum;
 }
 
 console.log("The sum is: " + add(1,2));
@@ -175,14 +175,14 @@ console.log("The sum is: " + add(1,2));
 
 ```javascript
 let person = {
-   firstName: "Jake",
-   age: 29,
-   isAdult: true,
-   'e-mail': 'jake@example.com',
-   hobbies: ['reading', 'travelling', 'gardening', 'cooking'],
-   greet: function(name) {
-       console.log('Hello from Postman ' + name + '. My name is + ' + this.firstName);
-   }
+firstName: "Jake",
+age: 29,
+isAdult: true,
+'e-mail': 'jake@example.com',
+hobbies: ['reading', 'travelling', 'gardening', 'cooking'],
+greet: function(name) {
+console.log('Hello from Postman ' + name + '. My name is + ' + this.firstName);
+}
 };
 person.greet('Jake');
 ```
@@ -198,7 +198,7 @@ person.greet('Jake');
 
 ```javascript
 const sayHello = function() {
-    console.log('Hello');
+console.log('Hello');
 }
 ```
 - functions without a name are called anonymous functions and can only be called by referencing the variable they're stored in, e.g., sayHello.
@@ -206,7 +206,7 @@ const sayHello = function() {
 
 ```javascript
 function doSomething(someFunction) {
-	someFunction(); // function is invoked here
+someFunction(); // function is invoked here
 }
 
 doSomething(sayHello); // function passed as an argument
@@ -216,11 +216,11 @@ doSomething(sayHello); // function passed as an argument
 
 ```javascript
 function doSomething(someFunction) {
-    someFunction();
+someFunction();
 }
 
 doSomething(function() {
-    sayHello();
+sayHello();
 });
 ```
 
@@ -259,8 +259,8 @@ console.log(response);
 - JavaScript variables are not the same with Postman variables
 - JavaScript variables are scoped only to the script where they are defined and any variable set from there are not persisted
 - Postman variables useful for:
-	- storing settings and persisting data on the long term, such as the baseUrl, API key or other details
-	- passing data between requests
+- storing settings and persisting data on the long term, such as the baseUrl, API key or other details
+- passing data between requests
 - it is possible to create or update a Postman collection variable from a script:
 
 ```javascript
@@ -273,8 +273,8 @@ pm.collectionVariables.set('firstName', 'Jamie');
 
 #### 📚 Resources
 
- * [Postman workspace - FORK Assignment #1 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
- * [Postman community](https://community.postman.com/)
+* [Postman workspace - FORK Assignment #1 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+* [Postman community](https://community.postman.com/)
 
 
 ## Unit 2 - Writing API tests
@@ -290,7 +290,7 @@ pm.collectionVariables.set('firstName', 'Jamie');
 
 ```javascript
 pm.test('Name of the test', function () {
-	// assertions
+// assertions
 });
 ```
 
@@ -307,7 +307,7 @@ pm.expect(1).to.eql(2); - test fails
 
 ```javascript
 pm.test('Status is 200', function () {
-	pm.expect(pm.response.status).to.eql(200);
+pm.expect(pm.response.status).to.eql(200);
 });
 ```
 
@@ -317,7 +317,7 @@ pm.test('Status is 200', function () {
 
 #### 📚 Resources
 
- * [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+* [Postman workspace - FORK from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
 
 
 ### Lesson 5 - Asserting the response body is JSON
@@ -327,7 +327,7 @@ pm.test('Status is 200', function () {
 
 ```javascript
 pm.test("Response body is JSON", () => {
-    pm.response.to.be.json;
+pm.response.to.be.json;
 });
 ```
 
@@ -338,8 +338,8 @@ pm.test("Response body is JSON", () => {
 
 ```javascript
 pm.test("Product is Espresso", () => {
-    const response = pm.response.json();
-    pm.expect(response.name).to.eql('Espresso');
+const response = pm.response.json();
+pm.expect(response.name).to.eql('Espresso');
 });
 ```
 
@@ -347,9 +347,9 @@ pm.test("Product is Espresso", () => {
 
 ```javascript
 pm.test("Product is in stock", () => {
-    const response = pm.response.json();
-    pm.expect(response.isAvailable).to.eql(true);
-    pm.expect(response.isAvailable).to.be.true;
+const response = pm.response.json();
+pm.expect(response.isAvailable).to.eql(true);
+pm.expect(response.isAvailable).to.be.true;
 });
 ```
 
@@ -395,33 +395,33 @@ pm.expect(response.id).to.match(/^[A-Z0-9]{9}$/);
 
 #### 📚 Resources
 
- * [Postman workspace - FORK Assignment #3 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+* [Postman workspace - FORK Assignment #3 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
 
 ### Lesson 11 - JSON schema validations
 
 ```javascript
 pm.test('Schema is valid', function () {
-    const schema = {
-        "type": "object",
-        "properties": {
-            "id": {
-                "type": "string"
-            },
-            "clientId": {
-                "type": "string"
-            },
-            "created": {
-                "type": "string",
-            },
-            "customerName": {
-                "type": "string"
-            },
-            "products": {
-                "type": "array"
-            }
-        }
-    };
-    pm.response.to.have.jsonSchema(schema);
+const schema = {
+"type": "object",
+"properties": {
+    "id": {
+	"type": "string"
+    },
+    "clientId": {
+	"type": "string"
+    },
+    "created": {
+	"type": "string",
+    },
+    "customerName": {
+	"type": "string"
+    },
+    "products": {
+	"type": "array"
+    }
+}
+};
+pm.response.to.have.jsonSchema(schema);
 });
 ```
 
@@ -433,41 +433,41 @@ pm.test('Schema is valid', function () {
 
 ```
 {
-    "type": "object",
-    "properties": {
-        "id": {
-            "type": "string",
-            "pattern": "^[A-Z0-9]{9}$"
-        },
-        "clientId": {
-            "type": "string",
-            "pattern": "^[a-zA-Z0-9]{9}$"
-        },
-        "created": {
-            "type": "string",
-            "format": "date-time"
-        },
-        "customerName": {
-            "type": "string"
-        },
-        "products": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "integer"
-                    },
-                    "quantity": {
-                        "type": "integer",
-                        "minimum": 1
-                    }
-                },
-                "required": ["id", "quantity"]
-            }
-        }
-    },
-    "required": ["id", "clientId", "created", "customerName", "products"]
+"type": "object",
+"properties": {
+"id": {
+    "type": "string",
+    "pattern": "^[A-Z0-9]{9}$"
+},
+"clientId": {
+    "type": "string",
+    "pattern": "^[a-zA-Z0-9]{9}$"
+},
+"created": {
+    "type": "string",
+    "format": "date-time"
+},
+"customerName": {
+    "type": "string"
+},
+"products": {
+    "type": "array",
+    "items": {
+	"type": "object",
+	"properties": {
+	    "id": {
+		"type": "integer"
+	    },
+	    "quantity": {
+		"type": "integer",
+		"minimum": 1
+	    }
+	},
+	"required": ["id", "quantity"]
+    }
+}
+},
+"required": ["id", "clientId", "created", "customerName", "products"]
 }
 ```
 
@@ -484,7 +484,7 @@ pm.test('Schema is valid', function () {
 
 #### 📚 Resources
 
- * [Postman workspace - FORK Assignment #4 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+* [Postman workspace - FORK Assignment #4 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
 
 
 ### Lesson 16 - Testing response headers
@@ -520,7 +520,7 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
 
 #### 📚 Resources
 
-* [Installing the Postman CLI]([https://json-schema.org/understanding-json-schema/](https://learning.postman.com/docs/postman-cli/postman-cli-installation/))
+* [Installing the Postman CLI](https://learning.postman.com/docs/postman-cli/postman-cli-installation/)
 
 
 ### Lesson 5 - Running a collection using Postman CLI
@@ -528,3 +528,92 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
 - when selecting "Run collection" > "Automate runs via CLI", Postman will provide the necesary commands needed to run the collection
 - the first step is autentication with the command `postman login` (this requires a Postman API key)
 - the second step is running the collection with the command `postman collection run`
+
+### Lesson 6 - Postman CLI options
+
+- For advanced Postman CLI configurations, you can specify additional command options
+
+#### 📚 Resources
+
+* [Postman CLI command options](https://learning.postman.com/docs/postman-cli/postman-cli-options/)
+
+
+## Unit 4 - Integrating Postman tests in CI/CD
+
+### Lesson 1 - Unit overview
+
+- this is the final unit focuses on integrating Postman tests in Continuous Integration/Continuous Deployment (CI/CD) pipelines
+- the objective is to automate API testing, ensuring APIs are continuously validated
+
+### Lesson 2 - What is CI/CD?
+
+- CI/CD stands for Continuous Integration and Continuous Deployment which is a practice in software development
+- Ci/CD aims to make software development process faster and reliable
+- Continuous Integration involves automatic testing of code changes and helps in detecting issues early
+- After CI, the Continuous Deployment (CD) pipeline begins
+- CD typically first deploys software to a test environment for testing purposes
+- if tests pass, changes are automatically deployed to production
+- Postman tests can be run at two points: a. after deploying API to pre-production environment; b. after deploying to the production environment
+- Postman CLI can automate running collections and tests in CD pipeline
+
+### Lesson 3 - CI/CD providers
+
+- there isn’t a single “best” tool for CI/CD
+- popular solutions for CI/CD include Jenkins, GitLab, Circle CI, GitHub Actions, …
+- once you understand how to use Postman CLI, integration with any other CI/CD server is relatively easy
+- to use GitHub Action you need to sign-up for a free GitHub account
+
+* [GitHub account](https://github.com/signup?source=login)
+
+### Lesson 4 - Running Postman tests with GitHub Actions
+
+- Create a new repository and make it public
+- create a new workflow and grab the pipeline configuration from Postman
+- store API key privately & reference it in the pipeline configuration
+
+### Lesson 5 - Assignment #5 - Run Postman in a CI/CD server
+
+- fork the Assignment #5 collection and follow the instructions from the documentation
+
+#### 📚 Resources
+
+* [Postman workspace - FORK Assignment #5 from here](https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api/overview)
+
+
+### Lesson 6 - Running Postman tests in other CI/CD tools
+
+- Postman can generate pipeline configurations for the following tools: Jenkins, Bitbucket Pipelines, CircleCI, GitLab, Azure Pipelines, Travis CI
+
+### Lesson 7 - Inspecting reports in the workspace
+
+- test executions in the CI/CD are ingested into the workspace reports
+
+### Lesson 8 - Collaboration within a Postman workspace
+
+- Postman is all about collaboration. Most of the time, you would want to create a team in Postman and use team workspaces
+- Important: once you create a team workspace, your "Public" workspace will transform in a "Personal" workspace; make sure to change it back to "Public"
+
+### Lesson 9 - Claim your badge
+
+- ensure you have compelted all assignments
+- ensure that your workspace is "Public" and not "Personal"
+- to claim your Postman badge, follow the instructions from the collection named "Claim your badge"
+
+### Lesson 10 - Conclusion
+
+- Congrats! You have completed the API test automation course with Postman.
+
+
+#### Fun facts about this project
+
+* 🕐 142 hours of work (and counting)
+* ☕️ 56 coffees
+* ∞ amount of fun!
+
+#### 💬 Let's stay in touch 
+
+* [Say THANK YOU for this course by subscribing on YouTube](https://www.youtube.com/@vdespa?sub_confirmation=1)
+* [Subscribe to Postman on YouTube](https://www.youtube.com/@postman?sub_confirmation=1)
+* [Follow me on Twitter](https://twitter.com/vdespa)
+* [Let's connect on LinkedIn](https://www.linkedin.com/in/vdespa/)
+

@@ -21,7 +21,7 @@
 
 - before we can automate the testing of an API, we first need to do a manual test
 - create a new public workspace which will store all collections used during the course
-- to run or make changes to a collection from a workspace that isn't yours, you need to make a copy (create a fork)
+- to run or make changes to a collection from a workspace that isn't yours, you need to make a copy of it (create a fork)
 
 #### 📚 Resources
 
@@ -48,7 +48,7 @@
 - the goal of this lecture is to go through all the endpoints of this API
 
 
-### Lesson 5 - Using to Postman variables to store secrets
+### Lesson 5 - Using Postman variables to store secrets
 
 - regardless if the collection is public or private, it is a best practice to store secrets (like API keys, passwords, tokens) in Postman variables
 - Postman auth helpers can configure different types of authentication
@@ -62,7 +62,7 @@
 - API tests are written using scripts
 - Postman uses JavaScript for writing tests
 - don't confuse JavaScript with Java, as they are two different programming languages
-- console.log can be used to write a message to the Postman console: `console.log(“Hello from the Tests!”);`
+- console.log can be used to write a message to the Postman console: `console.log("Hello from the Tests!");`
 
 
 ### Lesson 7 - Use the Postman console for debugging scripts
@@ -78,7 +78,7 @@
 
 ```javascript
 pm.test("Status code is 200", function () {
-pm.response.to.have.status(200);
+	pm.response.to.have.status(200);
 });
 ```
 
@@ -96,14 +96,14 @@ pm.response.to.have.status(200);
 - you can define a variable named "name" with the value "jamie" and log the value to the console like this:
 
 ```javascript
-let name = “Jamie”;
+let name = "Jamie";
 console.log(name);
 ```
 
 ### Lesson 11 - JavaScript basics - Variable scopes
 
 - variables defined within a block statement are available only to code within that block
-- variables defined outside of a block statement are in the global scope can can be access from anywhere
+- variables defined outside of a block statement are in the global scope can can be accessed from anywhere
 
 #### 📚 Resources
 
@@ -119,11 +119,11 @@ console.log(name);
 
 ```javascript
 let person = {
-name: "Jake", // string
-age: 29, //number
-isAdult: true, // boolean
-'e-mail': 'jake@example.com', // string
-hobbies: ['reading', 'travelling', 'gardening', 'cooking'] // array of strings
+	name: "Jake", // string
+	age: 29, //number
+	isAdult: true, // boolean
+	'e-mail': 'jake@example.com', // string
+	hobbies: ['reading', 'travelling', 'gardening', 'cooking'] // array of strings
 };
 ```
 
@@ -141,7 +141,7 @@ hobbies: ['reading', 'travelling', 'gardening', 'cooking'] // array of strings
 
 ```javascript
 function greet() {
-console.log("Hello from Postman!");
+	console.log("Hello from Postman!");
 }
 ```
 - a function needs to be invoked to work, using the following example syntax: greet()
@@ -149,7 +149,7 @@ console.log("Hello from Postman!");
 
 ```javascript
 function greet(name) {
-console.log("Hello from Postman, " + name + "!");
+	console.log("Hello from Postman, " + name + "!");
 }
 greet('Valentin');
 ```
@@ -160,9 +160,9 @@ greet('Valentin');
 
 ```javascript
 function add(a, b) {
-let sum = a + b;
-console.log(sum);
-return sum;
+	let sum = a + b;
+	console.log(sum);
+	return sum;
 }
 
 console.log("The sum is: " + add(1,2));
@@ -175,14 +175,14 @@ console.log("The sum is: " + add(1,2));
 
 ```javascript
 let person = {
-firstName: "Jake",
-age: 29,
-isAdult: true,
-'e-mail': 'jake@example.com',
-hobbies: ['reading', 'travelling', 'gardening', 'cooking'],
-greet: function(name) {
-console.log('Hello from Postman ' + name + '. My name is + ' + this.firstName);
-}
+	firstName: "Jake",
+	age: 29,
+	isAdult: true,
+	'e-mail': 'jake@example.com',
+	hobbies: ['reading', 'travelling', 'gardening', 'cooking'],
+	greet: function(name) {
+		console.log('Hello from Postman ' + name + '. My name is ' + this.firstName);
+	}
 };
 person.greet('Jake');
 ```
@@ -250,13 +250,13 @@ console.log(response);
 
 ### Lesson 18 - Passing data from one request to the other
 
-- using Postman variables is a good way to reduce duplication and to have be able to control multiple requests
+- using Postman variables is a good way to reduce duplication and to be able to control multiple requests
 - using Postman variables reduces or elimitates the need to copy/paste data or to manually reconfigure requests
 
 
 ### Lesson 19 - Setting Postman variables from scripts
 
-- JavaScript variables are not the same with Postman variables
+- JavaScript variables are not the same as Postman variables
 - JavaScript variables are scoped only to the script where they are defined and any variable set from there are not persisted
 - Postman variables useful for:
 - storing settings and persisting data on the long term, such as the baseUrl, API key or other details

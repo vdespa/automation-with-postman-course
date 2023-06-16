@@ -510,3 +510,21 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
 - variable issues: if a variable isn't being resolved during the run, ensure that the variable has been correctly defined in the selected environment.
 - best suited for APIs that are publicly accessible.
 - limited use for pre-production environments which are typically not publicly accessible.
+- Important: don't put secrets in the initial value of a Postman variable if the workspace is public
+
+### Lesson 4 - Postman CLI
+
+- CLI tools are necessary for running Postman collections without human intervention and on CI/CD servers like Jenkins, Github Actions, or GitLab
+- Postman CLI is a command line tool for running Postman collections
+
+
+#### 📚 Resources
+
+* [Installing the Postman CLI]([https://json-schema.org/understanding-json-schema/](https://learning.postman.com/docs/postman-cli/postman-cli-installation/))
+
+
+### Lesson 5 - Running a collection using Postman CLI
+
+- when selecting "Run collection" > "Automate runs via CLI", Postman will provide the necesary commands needed to run the collection
+- the first step is autentication with the command `postman login` (this requires a Postman API key)
+- the second step is running the collection with the command `postman collection run`

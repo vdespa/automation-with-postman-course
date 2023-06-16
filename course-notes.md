@@ -281,7 +281,7 @@ pm.collectionVariables.set('firstName', 'Jamie');
 
 ### Lesson 1 - Unit overview
 
-- we have a Postman collection which we can run request by reqy from the beginning to the end.
+- we have a Postman collection which we can run request by request from the beginning to the end.
 - in this unit we will focus on writing tests for the API
 
 ### Lesson 2 - Test structure in Postman
@@ -290,7 +290,7 @@ pm.collectionVariables.set('firstName', 'Jamie');
 
 ```javascript
 pm.test('Name of the test', function () {
-// assertions
+	// assertions
 });
 ```
 
@@ -303,11 +303,11 @@ pm.expect(1).to.eql(2); - test fails
 
 ### Lesson 3 - Making assertions about the status code
 
-- alternartive way of writing a status code test using `pm.expect`:
+- alternative way of writing a status code test using `pm.expect`:
 
 ```javascript
 pm.test('Status is 200', function () {
-pm.expect(pm.response.status).to.eql(200);
+	pm.expect(pm.response.status).to.eql(200);
 });
 ```
 
@@ -327,7 +327,7 @@ pm.expect(pm.response.status).to.eql(200);
 
 ```javascript
 pm.test("Response body is JSON", () => {
-pm.response.to.be.json;
+	pm.response.to.be.json;
 });
 ```
 
@@ -338,8 +338,8 @@ pm.response.to.be.json;
 
 ```javascript
 pm.test("Product is Espresso", () => {
-const response = pm.response.json();
-pm.expect(response.name).to.eql('Espresso');
+	const response = pm.response.json();
+	pm.expect(response.name).to.eql('Espresso');
 });
 ```
 
@@ -347,9 +347,9 @@ pm.expect(response.name).to.eql('Espresso');
 
 ```javascript
 pm.test("Product is in stock", () => {
-const response = pm.response.json();
-pm.expect(response.isAvailable).to.eql(true);
-pm.expect(response.isAvailable).to.be.true;
+	const response = pm.response.json();
+	pm.expect(response.isAvailable).to.eql(true);
+	pm.expect(response.isAvailable).to.be.true;
 });
 ```
 
@@ -480,7 +480,7 @@ pm.response.to.have.jsonSchema(schema);
 
 ### Lesson 15 - Assignment #4 - Write a JSON schema
 
-- fork the Assignment #3 collection and follow the instructions from the documentation
+- fork the Assignment #4 collection and follow the instructions from the documentation
 
 #### 📚 Resources
 
@@ -490,8 +490,7 @@ pm.response.to.have.jsonSchema(schema);
 ### Lesson 16 - Testing response headers
 
 ```javascript
-pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
-
+pm.expect(pm.response.headers.get('X-Powered-By')).to.eql('Express');
 ```
 
 
@@ -525,8 +524,8 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
 
 ### Lesson 5 - Running a collection using Postman CLI
 
-- when selecting "Run collection" > "Automate runs via CLI", Postman will provide the necesary commands needed to run the collection
-- the first step is autentication with the command `postman login` (this requires a Postman API key)
+- when selecting "Run collection" > "Automate runs via CLI", Postman will provide the necessary commands needed to run the collection
+- the first step is authentication with the command `postman login` (this requires a Postman API key)
 - the second step is running the collection with the command `postman collection run`
 
 ### Lesson 6 - Postman CLI options
@@ -548,7 +547,7 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
 ### Lesson 2 - What is CI/CD?
 
 - CI/CD stands for Continuous Integration and Continuous Deployment which is a practice in software development
-- Ci/CD aims to make software development process faster and reliable
+- CI/CD aims to make software development process faster and reliable
 - Continuous Integration involves automatic testing of code changes and helps in detecting issues early
 - After CI, the Continuous Deployment (CD) pipeline begins
 - CD typically first deploys software to a test environment for testing purposes
@@ -595,7 +594,7 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql(‘Express’);
 
 ### Lesson 9 - Claim your badge
 
-- ensure you have compelted all assignments
+- ensure you have completed all assignments
 - ensure that your workspace is "Public" and not "Personal"
 - to claim your Postman badge, follow the instructions from the collection named "Claim your badge"
 

@@ -582,23 +582,20 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql('Express');
 ### Lesson 6 - Running Postman tests in other CI/CD tools
 
 - Postman can generate pipeline configurations for the following tools: Jenkins, Bitbucket Pipelines, CircleCI, GitLab, Azure Pipelines, Travis CI
-
-### Lesson 7 - Inspecting reports in the workspace
-
 - test executions in the CI/CD are ingested into the workspace reports
 
-### Lesson 8 - Collaboration within a Postman workspace
+### Lesson 7 - Collaboration within a Postman workspace
 
 - Postman is all about collaboration. Most of the time, you would want to create a team in Postman and use team workspaces
 - Important: once you create a team workspace, your "Public" workspace will transform in a "Personal" workspace; make sure to change it back to "Public"
 
-### Lesson 9 - Claim your badge
+### Lesson 8 - Claim your badge
 
 - ensure you have completed all assignments
 - ensure that your workspace is "Public" and not "Personal"
 - to claim your Postman badge, follow the instructions from the collection named "Claim your badge"
 
-### Lesson 10 - Conclusion
+### Lesson 9 - Conclusion
 
 - Congrats! You have completed the API test automation course with Postman.
 

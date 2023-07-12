@@ -7,7 +7,7 @@ Hello and welcome to this free course on automating API testing with Postman.
 ## Important links
 
 * [📝 Course notes](./course-notes.md)
-* [📚 Postman workspace](http://example.com)
+* [📚 Postman workspace]((https://www.postman.com/valentins-team/workspace/test-automation-valentino-s-artisan-coffee-house-api)
 
 ## Get in touch
 
@@ -18,4 +18,4 @@ Hello and welcome to this free course on automating API testing with Postman.
 
 ## Learn even more
 
-* [💻 Postman Complete course for API testing  - with FreeCodeCamp discount](https://www.udemy.com/course/postman-the-complete-guide/?couponCode=FREECODECAMP_2021) 
+* [💻 Postman Complete course for API testing  - with FreeCodeCamp discount](https://www.udemy.com/course/postman-the-complete-guide/?couponCode=FREECODECAMP_2023) 

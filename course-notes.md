@@ -15,12 +15,13 @@
 
 * [Say THANK YOU for this course by subscribing on YouTube](https://www.youtube.com/@vdespa?sub_confirmation=1)
 * [Check out Postman's YouTube channel](https://www.youtube.com/@postman?sub_confirmation=1)
+* [Join the Postman newsletter](https://sendfox.com/lp/m74j2r)
 
 
 ### Lesson 2 - Introduction to the project
 
 - before we can automate the testing of an API, we first need to do a manual test
-- create a new public workspace which will store all collections used during the course
+- create a new public workspace that will store all collections used during the course
 - to run or make changes to a collection from a workspace that isn't yours, you need to make a copy of it (create a fork)
 
 #### 📚 Resources
@@ -30,7 +31,7 @@
 
 #### 🆘 Troubleshooting
 
-- if you can't get a status 200 OK reply from the sever when trying the Status endpoint, check the following:
+- if you can't get a status 200 OK reply from the server when trying the Status endpoint, check the following:
 - ensure you are on postman.com
 - if the error persists, [submit an issue](https://github.com/vdespa/automation-with-postman-course/issues/new) and add as many details as possible, including screenshots of any errors that appear.
 
@@ -103,7 +104,7 @@ console.log(name);
 ### Lesson 11 - JavaScript basics - Variable scopes
 
 - variables defined within a block statement are available only to code within that block
-- variables defined outside of a block statement are in the global scope can can be accessed from anywhere
+- variables defined outside of a block statement are in the global scope can be accessed from anywhere
 
 #### 📚 Resources
 
@@ -115,7 +116,7 @@ console.log(name);
 - JavaScript has various data types to represent information
 - the most likely data types you need to know about are: string, number, boolean, object, and array
 - if you are unsure of a data type you can use the `typeof` operator. Example: `console.log(typeof "John"); `
-- example of an object contaning various data types:
+- example of an object containing various data types:
 
 ```javascript
 let person = {
@@ -123,7 +124,7 @@ let person = {
 	age: 29, //number
 	isAdult: true, // boolean
 	'e-mail': 'jake@example.com', // string
-	hobbies: ['reading', 'travelling', 'gardening', 'cooking'] // array of strings
+	hobbies: ['reading', 'traveling', 'gardening', 'cooking'] // array of strings
 };
 ```
 
@@ -179,7 +180,7 @@ let person = {
 	age: 29,
 	isAdult: true,
 	'e-mail': 'jake@example.com',
-	hobbies: ['reading', 'travelling', 'gardening', 'cooking'],
+	hobbies: ['reading', 'traveling', 'gardening', 'cooking'],
 	greet: function(name) {
 		console.log('Hello from Postman ' + name + '. My name is ' + this.firstName);
 	}
@@ -187,7 +188,7 @@ let person = {
 person.greet('Jake');
 ```
 
-- when a function is defined insite an object, we call it a method
+- when a function is defined inside an object, we call it a method
 
 
 
@@ -251,15 +252,15 @@ console.log(response);
 ### Lesson 18 - Passing data from one request to the other
 
 - using Postman variables is a good way to reduce duplication and to be able to control multiple requests
-- using Postman variables reduces or elimitates the need to copy/paste data or to manually reconfigure requests
+- using Postman variables reduces or eliminates the need to copy/paste data or to manually reconfigure requests
 
 
 ### Lesson 19 - Setting Postman variables from scripts
 
 - JavaScript variables are not the same as Postman variables
-- JavaScript variables are scoped only to the script where they are defined and any variable set from there are not persisted
+- JavaScript variables are scoped only to the script where they are defined and any variable set from there is not persisted
 - Postman variables useful for:
-- storing settings and persisting data on the long term, such as the baseUrl, API key or other details
+- storing settings and persisting data in the long term, such as the baseUrl, API key, or other details
 - passing data between requests
 - it is possible to create or update a Postman collection variable from a script:
 
@@ -281,8 +282,8 @@ pm.collectionVariables.set('firstName', 'Jamie');
 
 ### Lesson 1 - Unit overview
 
-- we have a Postman collection which we can run request by request from the beginning to the end.
-- in this unit we will focus on writing tests for the API
+- we have a Postman collection that we can run request by request from the beginning to the end.
+- in this unit, we will focus on writing tests for the API
 
 ### Lesson 2 - Test structure in Postman
 
@@ -303,7 +304,7 @@ pm.expect(1).to.eql(2); - test fails
 
 ### Lesson 3 - Making assertions about the status code
 
-- alternative way of writing a status code test using `pm.expect`:
+- an alternative way of writing a status code test using `pm.expect`:
 
 ```javascript
 pm.test('Status is 200', function () {
@@ -333,7 +334,7 @@ pm.test("Response body is JSON", () => {
 
 ### Lesson 6 - Writing simple assertions against the response body
 
-- it is important to assert different aspects about the response body
+- it is important to assert different aspects of the response body
 - example checking the product name which is a string:
 
 ```javascript
@@ -505,7 +506,7 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql('Express');
 
 - runs are executed on the Postman Cloud
 - no need to keep Postman open or your computer on during the run
-- excellent tool for API monitoring after deployment, ensuring it continues to function as expected.
+- an excellent tool for API monitoring after deployment, ensuring it continues to function as expected.
 - variable issues: if a variable isn't being resolved during the run, ensure that the variable has been correctly defined in the selected environment.
 - best suited for APIs that are publicly accessible.
 - limited use for pre-production environments which are typically not publicly accessible.
@@ -541,19 +542,19 @@ pm.expect(pm.response.headers.get('X-Powered-By')).to.eql('Express');
 
 ### Lesson 1 - Unit overview
 
-- this is the final unit focuses on integrating Postman tests in Continuous Integration/Continuous Deployment (CI/CD) pipelines
+- this is the final unit that focuses on integrating Postman tests in Continuous Integration/Continuous Deployment (CI/CD) pipelines
 - the objective is to automate API testing, ensuring APIs are continuously validated
 
 ### Lesson 2 - What is CI/CD?
 
 - CI/CD stands for Continuous Integration and Continuous Deployment which is a practice in software development
-- CI/CD aims to make software development process faster and reliable
+- CI/CD aims to make software development process faster and more reliable
 - Continuous Integration involves automatic testing of code changes and helps in detecting issues early
 - After CI, the Continuous Deployment (CD) pipeline begins
 - CD typically first deploys software to a test environment for testing purposes
 - if tests pass, changes are automatically deployed to production
 - Postman tests can be run at two points: a. after deploying API to pre-production environment; b. after deploying to the production environment
-- Postman CLI can automate running collections and tests in CD pipeline
+- Postman CLI can automate running collections and tests in the CD pipeline
 
 ### Lesson 3 - CI/CD providers
 

@@ -1,4 +1,4 @@
- # 👋 Postman Beginner's Course - API Test Automation
+ # 👋 API Test Automation with Postman
 
 Hello and welcome to this free course on automating API testing with Postman. 
 

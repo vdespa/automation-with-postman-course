@@ -2,7 +2,7 @@
 
 Hello and welcome to this free course on automating API testing with Postman. 
 
-[![Watch the video on freeCodeCamp](https://img.youtube.com/vi/VywxIQ2ZXw4/sddefault.jpg)](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
+[![Watch the video on freeCodeCamp](https://img.youtube.com/vi/zp5Jh2FIpF0/sddefault.jpg)](https://www.youtube.com/watch?v=zp5Jh2FIpF0)
 
 ## Important links
 
